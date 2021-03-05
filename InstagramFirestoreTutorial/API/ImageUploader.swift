@@ -17,12 +17,12 @@ struct ImageUploader {
             if let error = error {
                 print("Debug: Failed to upload image \(error)")
             }
-        }
         
         ref.downloadURL { (url, error) in
             guard let imageUrl = url?.absoluteString else { return }
             completion(imageUrl)
         }
-        
+            
+        }
     }
 }

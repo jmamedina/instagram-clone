@@ -82,8 +82,8 @@ class RegistrationController: UIViewController {
         guard let email = emailTextField.text else { return }
         guard let password = passwordTextField.text else { return }
         guard let fulllname = fullnameTextField.text else { return }
-        guard let username = usernameTextField.text else { return }
-        guard let profileImage = self.profileImage else { return }
+        guard let username = usernameTextField.text?.lowercased() else { return }
+        guard let profileImage = profileImage else { return }
         
         let credentials = AuthCredentials(email: email,
                                           password: password,
@@ -97,7 +97,8 @@ class RegistrationController: UIViewController {
                 return
             }
             
-            print("successful asdfasdfasdfasfsafasfasfasfasdfasfdsafas")
+        self.dismiss(animated: true, completion: nil)
+            
         }
     }
     
