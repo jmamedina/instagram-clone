@@ -40,6 +40,8 @@
 		76F45DCC261C3FAB0013A7CB /* UploadPostController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F45DCB261C3FAB0013A7CB /* UploadPostController.swift */; };
 		76F45DD0261C4AB40013A7CB /* InputTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F45DCF261C4AB40013A7CB /* InputTextView.swift */; };
 		76F45DF4261C55410013A7CB /* PostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F45DF3261C55400013A7CB /* PostService.swift */; };
+		76F45DF7261D3D5A0013A7CB /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F45DF6261D3D5A0013A7CB /* Post.swift */; };
+		76F45DFA261D409D0013A7CB /* PostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F45DF9261D409D0013A7CB /* PostViewModel.swift */; };
 		B9618FB48FED0D3145373EB3 /* Pods_InstagramFirestoreTutorial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F75D5100850570BB0F998F2 /* Pods_InstagramFirestoreTutorial.framework */; };
 /* End PBXBuildFile section */
 
@@ -80,6 +82,8 @@
 		76F45DCB261C3FAB0013A7CB /* UploadPostController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPostController.swift; sourceTree = "<group>"; };
 		76F45DCF261C4AB40013A7CB /* InputTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputTextView.swift; sourceTree = "<group>"; };
 		76F45DF3261C55400013A7CB /* PostService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostService.swift; sourceTree = "<group>"; };
+		76F45DF6261D3D5A0013A7CB /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		76F45DF9261D409D0013A7CB /* PostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewModel.swift; sourceTree = "<group>"; };
 		A656E9E33DC3BEA7C0420E2D /* Pods-InstagramFirestoreTutorial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstagramFirestoreTutorial.debug.xcconfig"; path = "Target Support Files/Pods-InstagramFirestoreTutorial/Pods-InstagramFirestoreTutorial.debug.xcconfig"; sourceTree = "<group>"; };
 		C91CB5E29F950C78F01C0D46 /* Pods-InstagramFirestoreTutorial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstagramFirestoreTutorial.release.xcconfig"; path = "Target Support Files/Pods-InstagramFirestoreTutorial/Pods-InstagramFirestoreTutorial.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -203,6 +207,7 @@
 				76DDE4D125EE306900439675 /* AuthenticationViewModel.swift */,
 				764D7EA025F3149300724972 /* ProfileHeaderViewModel.swift */,
 				764D7EEB25F3611100724972 /* UserCellViewModel.swift */,
+				76F45DF9261D409D0013A7CB /* PostViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -223,6 +228,7 @@
 			isa = PBXGroup;
 			children = (
 				764D7E9D25F30C5C00724972 /* User.swift */,
+				76F45DF6261D3D5A0013A7CB /* Post.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -351,6 +357,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76F45DFA261D409D0013A7CB /* PostViewModel.swift in Sources */,
 				76DDE4CA25EE20DA00439675 /* CustomTextField.swift in Sources */,
 				764D7E7A25F30AB400724972 /* Constants.swift in Sources */,
 				764D7E0C25F208D600724972 /* ProfileCell.swift in Sources */,
@@ -360,6 +367,7 @@
 				76DDE4FF25EF28B800439675 /* AuthService.swift in Sources */,
 				76F45DCC261C3FAB0013A7CB /* UploadPostController.swift in Sources */,
 				76DDE4C325EE193400439675 /* LoginController.swift in Sources */,
+				76F45DF7261D3D5A0013A7CB /* Post.swift in Sources */,
 				76DDE4BC25EDF79900439675 /* FeedCell.swift in Sources */,
 				76DDE4D225EE306900439675 /* AuthenticationViewModel.swift in Sources */,
 				764D7E0F25F208EC00724972 /* ProfileHeader.swift in Sources */,
